@@ -1,0 +1,14 @@
+<div class="item-list">
+    <h1>Simple Angular App</h1>
+    <ul>
+      <li *ngFor="let item of items">{{ item }}</li>
+    </ul>
+    <input
+      type="text"
+      [(ngModel)]="newItem"
+      placeholder="Enter new item"
+      aria-label="New item"
+    />
+    <button (click)="addItem()">Add Item</button>
+  </div>
+  
